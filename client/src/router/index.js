@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Portfolio from '@/components/Portfolio'
+import Projects from '@/components/Projects'
+// step1
+// import About from '@/components/About'
 
 Vue.use(Router)
 
@@ -8,8 +11,20 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'portfolio',
+      component: Portfolio
+    }
+    // step2
+    // {
+    //   path: '/about',
+    //   name: 'about',
+    //   component: About
+    // }
+    ,
+    {
+      path: '/projects',
+      name: 'projects',
+      component: Projects
     }
   ]
 })

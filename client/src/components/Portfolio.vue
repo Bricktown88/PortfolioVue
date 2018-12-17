@@ -2,7 +2,8 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
-    <ul>
+    
+    <!-- <ul>
       <li>
         <a
           href="https://vuejs.org"
@@ -79,17 +80,31 @@
           awesome-vue
         </a>
       </li>
-    </ul>
+    </ul> -->
+    <panel title="Example">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur non, itaque odit corrupti maxime earum sit obcaecati eligendi quibusdam beatae et, dolorum voluptate nulla dignissimos alias doloremque neque nemo quo!</p>
+      <v-btn>
+        show button
+      </v-btn>
+    </panel>
   </div>
 </template>
 
 <script>
+import Panel from '@/components/Panel'
 export default {
-  name: 'HelloWorld',
+  name: 'portfolio',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    Panel
   }
 }
 </script>
