@@ -30,7 +30,7 @@
       </v-btn>
     </v-toolbar-items> -->
   </v-toolbar>
-    <v-navigation-drawer width="180" right temporary app v-model="hamburger">
+    <v-navigation-drawer width="180" left temporary app v-model="hamburger">
       <v-btn block v-for="button in buttons" :key="button.name" small flat dark 
       :to="button.route" class="pink">
         <v-icon left>{{button.icon}}</v-icon>
